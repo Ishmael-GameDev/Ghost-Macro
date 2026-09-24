@@ -56,14 +56,8 @@
       <HintPath>$(HollowKnightRefs)/Assembly-CSharp.dll</HintPath>
     </Reference>
 	<Reference Include="Satchel">
-		<HintPath>..\..\..\..\..\Games\Hollow Knight\Hollow Knight\Hollow Knight_Data\Managed\Mods\Satchel\Satchel.dll</HintPath>
+		<HintPath>$(HollowKnightRefs)Mods\Satchel\Satchel.dll</HintPath>
 	</Reference>
-	<Reference Include="MagicUI">
-		<HintPath>..\..\..\..\..\Games\Hollow Knight\Hollow Knight\Hollow Knight_Data\Managed\Mods\MagicUI\MagicUI.dll</HintPath>
-	</Reference>
-	  <Reference Include="DebugMod">
-		  <HintPath>..\..\..\..\..\Games\Hollow Knight\Hollow Knight\Hollow Knight_Data\Managed\Mods\DebugMod\DebugMod.dll</HintPath>
-	  </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>$(HollowKnightRefs)/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
@@ -334,7 +328,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
-    <None Include="ReadMe.md" />
+	<EmbeddedResource Include="ReadMe.md" LogicalName="ReadMe.md" />
     <None Include="Resources\.gitignore" />
   </ItemGroup>
 </Project>
